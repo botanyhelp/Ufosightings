@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jimsuplee.ufosightings"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/alien48"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.jimsuplee.ufosightings.Ufosightings"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:label="Location"
+            android:name=".Location" >
+            <intent-filter >
+                <action android:name="com.jimsuplee.ufosightings.Location" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:label="LocationState"
+            android:name=".LocationState" >
+            <intent-filter >
+                <action android:name="com.jimsuplee.ufosightings.LocationState" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:label="LocationWorld"
+            android:name=".LocationWorld" >
+            <intent-filter >
+                <action android:name="com.jimsuplee.ufosightings.LocationWorld" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:label="Results"
+            android:name=".Results" >
+            <intent-filter >
+                <action android:name="com.jimsuplee.ufosightings.Results" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+    </application>
+    
+</manifest>

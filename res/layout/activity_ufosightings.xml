@@ -1,0 +1,147 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            tools:context=".Ufosightings" >
+
+            <TextView
+                android:id="@+id/txt_Ufo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hello_world" />
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/btn_Location"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="onClickLocation"
+                        android:text="City" />
+
+                    <Button
+                        android:id="@+id/btn_LocationState"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="onClickLocationState"
+                        android:text="State" />
+
+                    <Button
+                        android:id="@+id/btn_LocationWorld"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="onClickLocationWorld"
+                        android:text="Nation" />
+                </TableRow>
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/btn_LocationPager"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="onClickLocationMore"
+                        android:text="Next 10"
+                        android:visibility="invisible" />
+
+                    <Button
+                        android:id="@+id/btn_LocationStatePager"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="onClickLocationStateMore"
+                        android:text="Next 10"
+                        android:visibility="invisible" />
+
+                    <Button
+                        android:id="@+id/btn_LocationWorldPager"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="onClickLocationWorldMore"
+                        android:text="Next 10"
+                        android:visibility="invisible" />
+                </TableRow>
+            </TableLayout>
+
+            <EditText
+                android:id="@+id/txt_description"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/btn_Description"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="onClickDescription"
+                        android:text="By Description" />
+
+                    <Button
+                        android:id="@+id/btn_DescriptionPager"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="onClickDescription"
+                        android:text="Next 10"
+                        android:visibility="invisible" />
+                </TableRow>
+            </TableLayout>
+
+            <DatePicker
+                android:id="@+id/datePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:endYear="2010"
+                android:startYear="1950" />
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/btn_Date"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="onClickExactDate"
+                        android:text="Exact Date" />
+
+                    <Button
+                        android:id="@+id/btn_Date"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="onClickDate"
+                        android:text="Date, Any Year" />
+                </TableRow>
+            </TableLayout>
+
+            <Button
+                android:id="@+id/btn_Help"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickHelp"
+                android:text="Help" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
